@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Operators - Assignment</title>
+  </head>
+  <body>
+    <div style="border: 2px solid black; padding: 12px">
+      <h2>Arithmetic Operator</h2>
+      <h2>Number weeks in a year</h2>
+      <p id="wkDy"></p>
+    </div>
+
+    <div style="border: 2px solid black; padding: 12px; margin-top: 12px">
+      <h2>String Concatenation Operator</h2>
+      <p id="concat"></p>
+    </div>
+    <script>
+      document.getElementById("wkDy").innerHTML =
+        Math.round(365 / 7) +
+        " Weeks and " +
+        (365 % 7) +
+        " Day is there in a year";
+
+      document.getElementById("concat").innerHTML =
+        "Hello" + " " + "Students" + " " + "Good" + " " + "Morning";
+    </script>
+  </body>
+</html>
